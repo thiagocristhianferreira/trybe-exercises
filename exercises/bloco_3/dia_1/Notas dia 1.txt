@@ -1,0 +1,20 @@
+﻿Tags
+
+<br> quebra de linha
+<strong> “negrito” (precisa fechamento)
+<em> “itálico” (precisa fechamento)
+
+<ol> lista ordenada (precisa fechamento)
+<ul> lista não-ordenada (precisa fechamento)
+<li> cada item da lista (precisa fechamento)
+
+<img> imagem → <img src=”link” width=”300px”>
+	alt= descrição se imagem não aparecer
+
+
+<a> Link – interno ou externo (precisa fechamento)
+	href=”link” abre link
+	target=”_blank” abre link em nova aba
+	id=”css”
+
+ 
