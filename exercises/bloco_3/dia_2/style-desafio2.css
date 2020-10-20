@@ -1,0 +1,25 @@
+h1 {
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: center;
+    text-decoration: overline;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    text-align:end;
+    text-decoration:line-through;
+}
+body {
+    font-size: 16px;
+}
+.amarelo {
+    background-color: yellow;
+}
+.vermelho {
+    background-color:red;
+}
+.marrom {
+    background-color:brown;
+}
