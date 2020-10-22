@@ -1,0 +1,27 @@
+.nav-list li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    background-color: lemonchiffon;
+    font-family: monospace;
+    text-decoration: none;
+}
+body {
+    background-color: #C0C0C0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.table-list {
+    border: 6px ridge black;
+    margin: 6px;
+    margin: 0 auto;
+}
+.align-paragrafo {
+    text-align: justify;
+}
+
+.foto {
+    width: 20%;
+    float: right;
+    padding-left: 6px;
+    display: block;
+}
