@@ -25,3 +25,16 @@ body {
     padding-left: 6px;
     display: block;
 }
+.fatos {
+    width: 50%;
+    float: left;
+    
+}
+.barra-lateral {
+    float: right;
+    width: 20%;
+    
+}
+.footer {
+    clear: both;
+}
