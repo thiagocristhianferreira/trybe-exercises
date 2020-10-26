@@ -1,4 +1,4 @@
-﻿Tags
+Tags
 
 <br> quebra de linha
 <strong> “negrito” (precisa fechamento)
@@ -16,5 +16,3 @@
 	href=”link” abre link
 	target=”_blank” abre link em nova aba
 	id=”css”
-
- 
