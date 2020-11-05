@@ -31,7 +31,15 @@ function diasCalendario() {
         };
     };
 };
-
 diasCalendario();
 
 // Exercicio 2
+function criarBotao() {
+    let btnContainer = document.querySelector('.buttons-container');
+    let botao = document.createElement('button');
+    botao.id = 'btn-holiday';
+    botao.innerHTML = 'Feriados';
+    btnContainer.appendChild(botao);
+}
+criarBotao();
+
