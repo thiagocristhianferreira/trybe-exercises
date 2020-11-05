@@ -12,7 +12,7 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
-// Escreva seu código abaixo.
+// Exercicio 1
 
 function diasCalendario() {
     let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -20,10 +20,18 @@ function diasCalendario() {
     for (i = 0; i < dezDaysList.length; i++) {
         let dias = dezDaysList[i];
         let listaDias = document.createElement('li');
-        listaDias.innerHTML = dias;
+        listaDias.className += 'day';
         diasDez.appendChild(listaDias);
+        listaDias.innerHTML = dias;
+        if (dezDaysList[i] == 24 || dezDaysList[i] == 25 || dezDaysList[i] == 31) {
+            listaDias.className += ' holiday';
+        };
+        if (dezDaysList[i] == 4 || dezDaysList[i] == 11 || dezDaysList[i] == 18 || dezDaysList[i] == 25) {
+            listaDias.className += ' friday';
+        };
     };
 };
 
 diasCalendario();
 
+// Exercicio 2
