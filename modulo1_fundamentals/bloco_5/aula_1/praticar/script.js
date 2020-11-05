@@ -5,4 +5,3 @@ document.getElementById("paragraph").innerText = "The best movie EVER";
 document.getElementById("subtitle").innerText = "The best";
 
 document.getElementsByClassName
-
