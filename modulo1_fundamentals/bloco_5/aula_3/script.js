@@ -20,7 +20,7 @@ function diasCalendario() {
     for (i = 0; i < dezDaysList.length; i++) {
         let dias = dezDaysList[i];
         let listaDias = document.createElement('li');
-        listaDias.className += 'day';
+        listaDias.className = 'day';
         diasDez.appendChild(listaDias);
         listaDias.innerHTML = dias;
         if (dezDaysList[i] == 24 || dezDaysList[i] == 25 || dezDaysList[i] == 31) {
@@ -40,6 +40,21 @@ function criarBotao() {
     botao.id = 'btn-holiday';
     botao.innerHTML = 'Feriados';
     btnContainer.appendChild(botao);
-}
+};
 criarBotao();
 
+// Exercicio 3
+function mudaCorFeriados() {
+    let btnMudaCor = document.querySelector('#btn-holiday');
+    let listaFeriados = document.querySelectorAll('.holiday');
+    btnMudaCor.addEventListener('click', function () {
+        for (i = 0; i < listaFeriados.length; i++) {
+            if (listaFeriados[i].style.backgroundColor === 'yellow') {
+                listaFeriados[i].style.backgroundColor = 'rgb(238,238,238)';
+            } else {
+                listaFeriados[i].style.backgroundColor = 'yellow';
+            }
+        }
+    })
+};
+mudaCorFeriados();
