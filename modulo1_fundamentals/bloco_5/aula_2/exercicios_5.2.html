@@ -105,7 +105,7 @@
     divRight.appendChild(listaNaoOrd);
     for (i = 0; i < numeros.length; i++) {
       let listaNumeros = document.createElement('li');
-      listaNumeros.innerText = numeros = [i];
+      listaNumeros.innerHTML = numeros[i];
       listaNaoOrd.appendChild(listaNumeros);
     }
 
@@ -116,8 +116,34 @@
       mainContent.appendChild(tagsH3);
     }
 
+    //PARTE 2
+    //exercicio 1
+    let tituloAddClass = document.getElementsByTagName('h1')[0];
+    tituloAddClass.className = 'title';
 
+    //exercicio 2
+    let elementosH3 = document.getElementsByTagName('h3');
+    for (let i = 0; i < elementosH3.length; i++) {
+      elementosH3[i].className = 'description';
+    }
 
+    //exercicio 3
+    let rmClass = document.getElementsByClassName('left-content')[0];
+    mainContent.removeChild(rmClass);
+
+    //exercicio 4
+    let centerClass = document.querySelector('.right-content');
+    centerClass.style.marginRight = 'auto';
+
+    //exercicio 5
+    let centerContentColor = document.querySelector('.center-content');
+    centerContentColor.parentNode.style.backgroundColor = 'green';
+
+    //exercicio 6
+    let rmNumeros = document.querySelector('ul');
+    console.log(rmNumeros);
+    rmNumeros.lastChild.remove();
+    rmNumeros.lastChild.remove();
 
   </script>
 </body>
