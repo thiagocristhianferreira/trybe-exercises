@@ -77,3 +77,22 @@ function mudaTextoFriday() {
   })
 };
 mudaTextoFriday();
+
+// Exercicio 6
+let dias = document.querySelector('#days');
+
+function diaMouseOver() {
+  dias.addEventListener('mouseover', function(evento){
+    evento.target.style.fontSize = '28px';
+    evento.target.style.fontWeight = 'bold';
+  });
+};
+diaMouseOver();
+
+function diaMouseOut() {
+  dias.addEventListener('mouseout', function(evento) {
+    evento.target.style.fontSize = '20px';
+    evento.target.style.fontWeight = 'normal';
+  });
+};
+diaMouseOut();
