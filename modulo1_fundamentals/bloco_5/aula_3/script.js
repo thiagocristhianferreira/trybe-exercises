@@ -96,3 +96,12 @@ function diaMouseOut() {
   });
 };
 diaMouseOut();
+
+// Exercicio 7
+function addTaskSpan(taskName) {
+  let taskContainer = document.querySelector('.my-tasks');
+  let newTask = document.createElement('span');
+  newTask.innerText = taskName;
+  taskContainer.appendChild(newTask);
+};
+addTaskSpan('cozinhar');
