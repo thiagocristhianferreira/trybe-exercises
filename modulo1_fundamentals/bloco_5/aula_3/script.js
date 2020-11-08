@@ -115,3 +115,16 @@ function addTaksLegend(color) {
 }
 addTaksLegend('green');
 
+// Exercicio 9
+function toggleTask() {
+  let task = document.querySelector('.task');
+  task.addEventListener('click', function(event){
+    let taskSelected = document.querySelector('.task.selected');
+    if (taskSelected === null) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    };
+  });
+};
+toggleTask();
