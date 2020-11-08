@@ -77,3 +77,69 @@ function mudaTextoFriday() {
   })
 };
 mudaTextoFriday();
+
+// Exercicio 6
+let dias = document.querySelector('#days');
+
+function diaMouseOver() {
+  dias.addEventListener('mouseover', function (evento) {
+    evento.target.style.fontSize = '28px';
+    evento.target.style.fontWeight = 'bold';
+  });
+};
+diaMouseOver();
+
+function diaMouseOut() {
+  dias.addEventListener('mouseout', function (evento) {
+    evento.target.style.fontSize = '20px';
+    evento.target.style.fontWeight = 'normal';
+  });
+};
+diaMouseOut();
+
+// Exercicio 7
+let taskContainer = document.querySelector('.my-tasks');
+function addTaskSpan(taskName) {
+  let newTask = document.createElement('span');
+  newTask.innerText = taskName;
+  taskContainer.appendChild(newTask);
+};
+addTaskSpan('cozinhar');
+
+// Exercicio 8
+function addTaksLegend(color) {
+  let divLegend = document.createElement('div');
+  divLegend.className = 'task';
+  divLegend.style.backgroundColor = color;
+  taskContainer.appendChild(divLegend);
+}
+addTaksLegend('green');
+
+// Exercicio 9
+function toggleTask() {
+  let task = document.querySelector('.task');
+  task.addEventListener('click', function(event){
+    let taskSelected = document.querySelector('.task.selected');
+    if (taskSelected === null) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    };
+  });
+};
+toggleTask();
+
+// Exercicio 10
+function toggleDayColor() {
+  dias.addEventListener('click', function(event) {
+    let taskSelected = document.querySelector('.selected');
+    if (taskSelected != null) {
+      if (event.target.style.color === taskSelected.style.backgroundColor) {
+        event.target.style.color = 'rgb(119,119,119)';
+      } else {
+        event.target.style.color = taskSelected.style.backgroundColor;
+      };
+    };
+  });
+};
+toggleDayColor();
