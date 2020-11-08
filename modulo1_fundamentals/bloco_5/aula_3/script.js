@@ -128,3 +128,18 @@ function toggleTask() {
   });
 };
 toggleTask();
+
+// Exercicio 10
+function toggleDayColor() {
+  dias.addEventListener('click', function(event) {
+    let taskSelected = document.querySelector('.selected');
+    if (taskSelected != null) {
+      if (event.target.style.color === taskSelected.style.backgroundColor) {
+        event.target.style.color = 'rgb(119,119,119)';
+      } else {
+        event.target.style.color = taskSelected.style.backgroundColor;
+      };
+    };
+  });
+};
+toggleDayColor();
