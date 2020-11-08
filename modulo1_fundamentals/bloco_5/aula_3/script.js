@@ -82,7 +82,7 @@ mudaTextoFriday();
 let dias = document.querySelector('#days');
 
 function diaMouseOver() {
-  dias.addEventListener('mouseover', function(evento){
+  dias.addEventListener('mouseover', function (evento) {
     evento.target.style.fontSize = '28px';
     evento.target.style.fontWeight = 'bold';
   });
@@ -90,7 +90,7 @@ function diaMouseOver() {
 diaMouseOver();
 
 function diaMouseOut() {
-  dias.addEventListener('mouseout', function(evento) {
+  dias.addEventListener('mouseout', function (evento) {
     evento.target.style.fontSize = '20px';
     evento.target.style.fontWeight = 'normal';
   });
@@ -98,10 +98,20 @@ function diaMouseOut() {
 diaMouseOut();
 
 // Exercicio 7
+let taskContainer = document.querySelector('.my-tasks');
 function addTaskSpan(taskName) {
-  let taskContainer = document.querySelector('.my-tasks');
   let newTask = document.createElement('span');
   newTask.innerText = taskName;
   taskContainer.appendChild(newTask);
 };
 addTaskSpan('cozinhar');
+
+// Exercicio 8
+function addTaksLegend(color) {
+  let divLegend = document.createElement('div');
+  divLegend.className = 'task';
+  divLegend.style.backgroundColor = color;
+  taskContainer.appendChild(divLegend);
+}
+addTaksLegend('green');
+
