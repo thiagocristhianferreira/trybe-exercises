@@ -42,3 +42,6 @@ fieldset label{
   margin: 20px;
   text-align: left;
 }
+.error {
+  background-color: lightcoral;
+}
