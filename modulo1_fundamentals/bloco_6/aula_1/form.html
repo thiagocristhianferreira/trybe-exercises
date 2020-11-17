@@ -12,57 +12,60 @@
       <h1>Exercicio dia 6.1</h1>
       <p><em>Bora praticar!!! #VQV</em></p>
     </div>
-    <fieldset>
-      <legend>Formulário</legend>
-      <div class="line-content">
-        <label for="full-name">Nome:</label>
-        <input type="text" maxlength="40" id="full-name" required>
+    <form action="get">
+      <fieldset>
+        <legend>Formulário</legend>
+        <div class="line-content">
+          <label for="full-name">Nome:</label>
+          <input type="text" maxlength="40" id="full-name" required>
+        </div>
+        <div class="line-content">
+          <label for="email">e-mail:</label>
+          <input type="text" maxlength="50" id="email" required>
+        </div>
+        <div class="line-content">
+          <label for="cpf">CPF:</label>
+          <input type="text" maxlength="14" id="cpf" onkeypress="formatar('###.###.###-##', this)" required>
+        </div>
+        <div class="line-content">
+          <label for="adress">Endereco:</label>
+          <input type="text" maxlength="200" id="adress" required>
+        </div>
+        <div class="line-content">
+          <label for="city">Cidade:</label>
+          <input type="text" maxlength="28" id="city" required>
+        </div>
+        <div class="line-content">
+          <label for="state">Estado</label>
+          <select name="select" id="state" required>
+          </select>
+        </div>
+        <div class="line-content" required>
+          <label for="casa">Casa</label>
+          <input type="radio" id="casa" name="home">
+          <label for="apto">Apartamento</label>
+          <input type="radio" id="apto" name="home">
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="resume">Curriculum Resume
+          <textarea name="form" id="resume" cols="20" rows="5" maxlength="1000" placeholder="Curriculum resume" required></textarea>
+        </label>
+        <label for="office">Office
+          <textarea name="form" id="office" cols="10" rows="4" maxlength="40" placeholder="Office" required></textarea>
+        </label>
+        <label for="officeDescription">Office Description
+          <textarea name="form" id="officeDescription" cols="20" rows="5" maxlength="500" placeholder="Office description" required></textarea>
+        </label>
+        <label for="beginingDate"> Data de inicio
+          <input type="text" id="beginingDate" maxlength="10" onkeypress="formatar('##/##/####', this)" required>
+        </label>
+      </fieldset>
+      <div>
+        <input type="button" value="Submit" id="prev">
+        <input type="reset" value="reset" id="rst">
       </div>
-      <div class="line-content">
-        <label for="email">e-mail:</label>
-        <input type="text" maxlength="50" id="email" required>
-      </div>
-      <div class="line-content">
-        <label for="cpf">CPF:</label>
-        <input type="text" maxlength="14" id="cpf" onkeypress="formatar('###.###.###-##')", this) required>
-      </div>
-      <div class="line-content">
-        <label for="adress">Endereco:</label>
-        <input type="text" maxlength="200" id="adress" required>
-      </div>
-      <div class="line-content">
-        <label for="city">Cidade:</label>
-        <input type="text" maxlength="28" id="city" required>
-      </div>
-      <div class="line-content">
-        <label for="state">Estado</label>
-        <select name="select" id="state" required>
-        </select>
-      </div>
-      <div class="line-content" required>
-        <label for="casa">Casa</label>
-        <input type="radio" id="casa" name="home">
-        <label for="apto">Apartamento</label>
-        <input type="radio" id="apto" name="home">
-      </div>
-    </fieldset>
-    <fieldset>
-      <label for="resume">Curriculum Resume
-        <textarea name="form" id="resume" cols="20" rows="5" maxlength="1000" placeholder="Curriculum resume" required></textarea>
-      </label>
-      <label for="office">Office
-        <textarea name="form" id="office" cols="10" rows="4" maxlength="40" placeholder="Office" required></textarea>
-      </label>
-      <label for="officeDescription">Office Description
-        <textarea name="form" id="officeDescription" cols="20" rows="5" maxlength="500" placeholder="Office description" required></textarea>
-      </label>
-      <label for="beginingDate"> Data de inicio
-        <input type="text" id="beginingDate">
-      </label>
-    </fieldset>
-    <div>
-      
-    </div>
+    </form>
   </header>
   <script src="script.js"></script>
 </body>
