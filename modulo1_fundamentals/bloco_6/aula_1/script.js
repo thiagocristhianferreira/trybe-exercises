@@ -7,39 +7,42 @@ for (let statesElement = 0; statesElement < states.length; statesElement++) {
   stateOptions.appendChild(optionElement);
 };
 
-function formatar(mascara, documento) {
-  let i = documento.value.length;
-  let saida = mascara.substring(0, 1);
-  let texto = mascara.substring(i);
-  if (texto.substring(0, 1) != saida) {
-    documento.value += texto.substring(0, 1);
-  };
-};
-
-
-let fullName = document.getElementById('full-name');
-
-fullName.addEventListener("input", function (event) {
-
-  if (fullName.validity.valid) {
-    // In case there is an error message visible, if the field
-    // is valid, we remove the error message.
-    error.innerHTML = ""; // Reset the content of the message
-    error.className = "error"; // Reset the visual state of the message
-  }
-}, false);
-form.addEventListener("submit", function (event) {
-  // Each time the user tries to send the data, we check
-  // if the email field is valid.
-  if (!email.validity.valid) {
-    
-    // If the field is not valid, we display a custom
-    // error message.
-    error.innerHTML = "I expect an e-mail, darling!";
-    error.className = "error active";
-    // And we prevent the form from being sent by canceling the event
+document.getElementById('prev').addEventListener('click', function (event) {
+  let date = document.getElementById('beginingDate');
+  let dia = date.value.substring(0, 1) + date.value.substring(1, 2);
+  let mes = date.value.substring(3, 4) + date.value.substring(4, 5);
+  let ano = date.value.substring(6, 7) + date.value.substring(7, 8) + date.value.substring(8, 9) + date.value.substring(9, 10);
+  dia = parseInt(dia);
+  mes = parseInt(mes);
+  ano = parseInt(ano);
+  let dateFormat = date.value.substring(2, 3);
+  let dateFormat2 = '/';
+  if (dateFormat != dateFormat2) {
+    alert('Formato da data esta errado');
     event.preventDefault();
   }
-}, false);
+  if (dia > 31 || dia < 1) {
+    alert('Dia fora do intervalo');
+    event.preventDefault();
+  }
+  if (mes > 12 || mes < 1) {
+    alert('Mes fora do intervalo');
+    event.preventDefault();
+  }
+  if (ano <= 1 || ano > 2030) {
+    alert('Ano fora do intervalo');
+    event.preventDefault();
+  };
+  //CONSOLIDADO
+  let divConsolidated = document.getElementById('consolidated');
+  let nome = document.getElementById('full-name').value;
+  let name = document.createElement('p');
+  name.innerHTML = nome;
+  divConsolidated.append(name);
+  console.log(nome);
 
+
+
+
+});
 

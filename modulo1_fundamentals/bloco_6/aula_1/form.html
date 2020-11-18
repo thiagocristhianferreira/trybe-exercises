@@ -25,7 +25,7 @@
         </div>
         <div class="line-content">
           <label for="cpf">CPF:</label>
-          <input type="text" maxlength="14" id="cpf" onkeypress="formatar('###.###.###-##', this)" required>
+          <input type="text" maxlength="11" id="cpf" required><!-- onkeypress="formatar('###.###.###-##', this)" -->
         </div>
         <div class="line-content">
           <label for="adress">Endereco:</label>
@@ -58,7 +58,7 @@
           <textarea name="form" id="officeDescription" cols="20" rows="5" maxlength="500" placeholder="Office description" required></textarea>
         </label>
         <label for="beginingDate"> Data de inicio
-          <input type="text" id="beginingDate" maxlength="10" onkeypress="formatar('##/##/####', this)" required>
+          <input type="text" id="beginingDate" maxlength="10" required> <!-- onkeypress="formatar('##/##/####', this)" -->
         </label>
       </fieldset>
       <div>
@@ -66,6 +66,9 @@
         <input type="reset" value="reset" id="rst">
       </div>
     </form>
+    <div id="consolidated" class="consolidated">
+
+    </div>
   </header>
   <script src="script.js"></script>
 </body>
