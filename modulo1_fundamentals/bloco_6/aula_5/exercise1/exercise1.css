@@ -32,7 +32,7 @@ figure {
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1299px) {
+@media screen and (min-width: 800px) {
   body {
     background-color: lightgoldenrodyellow;
     margin: 30px;
@@ -61,10 +61,11 @@ figure {
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1600px) {
+@media screen and (min-width: 1300px) {
   body {
     background-color: lightskyblue;
     margin: 30px;
+    max-width: 1400px;
   }
   p {
     font-size: 45px;
