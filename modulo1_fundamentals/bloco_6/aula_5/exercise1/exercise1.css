@@ -25,8 +25,9 @@ figure {
   }
   figure {
     margin: 10px;
+    padding: 10px;
   }
   img {
-    max-width: 50%;
+    max-width: 100%;
   }
 }
