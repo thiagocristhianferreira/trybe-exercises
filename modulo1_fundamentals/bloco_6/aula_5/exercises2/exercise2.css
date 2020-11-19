@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: lightskyblue;
+  }
+  nav ul li {
+    display: none;
+  }
+  .aside-one {
+    display: none;
+  }
+  .aside-two {
+    display: none;
+  }
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  p {
+    font-size: 2em;
+    text-align: justify;
+    margin: 5%;
+  }
+  .footer-h3, .footer-p {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 401px) {
+  body {
+    background-color: rgb(187, 187, 51);
+  }
+  nav ul li {
+    display: none;
+  }
+  .aside-one {
+    font-size: 1.5em;
+    margin: 10%;
+
+  }
+  .aside-two {
+    display: none;
+  }
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  p {
+    font-size: 2em;
+    text-align: justify;
+    margin: 5%;
+  }
+  .footer-h3, .footer-p {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul {
+    margin: auto;
+  }
+
+  nav ul li {
+    display: inline;
+    font-size: 1.5em;
+    padding: 50px;
+  }
+
+  .aside-one {
+    font-size: 1.5em;
+    margin: 2%;
+    display: inline-block;
+    width: 38%;
+  }
+  .aside-two {
+    font-size: 1.5em;
+    margin: 2%;
+    display: inline-block;
+    width: 38%;
+    float: right;
+  }
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  p {
+    font-size: 2em;
+    text-align: justify;
+    margin: 5%;
+  }
+  .footer-h3, .footer-p {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+
