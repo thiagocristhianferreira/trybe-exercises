@@ -32,12 +32,11 @@ const people = [
 // Dica: use object destructuring .
 // escreva filterPeople abaixo
 
-const filterPeople = (people) => people.filter(person => person.nationality === "Australian" &&
-person.bornIn < 2000 && person.bornIn > 1900)
+const filterPeople = (people) => people.filter(({nationality, bornIn}) => nationality === "Australian" && bornIn < 2000 && bornIn > 1900)
 
 const filteredPeople = filterPeople(people);
 
-//console.log(filteredPeople)
+// console.log(filteredPeople)
 
 assert.deepStrictEqual(filteredPeople[0], { name: "Nicole", bornIn: 1992, nationality: "Australian" })
 assert.deepStrictEqual(filteredPeople[1], { name: "Toby", bornIn: 1901, nationality: "Australian" })
